@@ -13,47 +13,55 @@
         <div class="panels">
 
             <div></div>
-            <div class="panel1">
-                <div>
-                    <form action="/posts" method="POST" class="form_panel">
-                        @csrf
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="name" name="name" placeholder="YOUR NAME">
+            <div>
+                <form action="/posts" method="POST">
+                    <div class="center_panel">
+
+                        <div class="form_panel">
+                            @csrf
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="YOUR NAME">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" name="email"
+                                    placeholder="YOUR EMAIL ADDRESS">
+                            </div>
+                            <div class="form-group two_inputs">
+                                <input type="text" class="form-control" id="name" name="company" placeholder="COMPANY">
+                                <input type="text" class="form-control" id="name" name="phone" placeholder="PHONE">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" class="form-control" rows="3" cols="50"
+                                    placeholder="YOUR MESSAGE"></textarea>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="name" name="email" placeholder="YOUR EMAIL ADDRESS">
-                        </div>
-                        <div class="form-group two_inputs">
-                            <input type="text" class="form-control" id="name" name="company" placeholder="COMPANY">
-                            <input type="text" class="form-control" id="name" name="phone" placeholder="PHONE">
-                        </div>
-                        <div class="form-group">
-                            <textarea name="message" class="form-control" rows="3" cols="50"
-                                placeholder="YOUR MESSAGE"></textarea>
+                        <div>
+                            <p class="t t1">YOU CAN FIND US HERE</p>
+                            <p class="t t2">SAMPLE ADDRESS. SAMPLE STREET.123/45 <br><a class="a_style"
+                                    href="https://www.google.com/maps">OR ON
+                                    MAPS</a></p>
+                            <ul>
+                                <li class="t">
+                                    +3 (000) 012325455
+                                </li>
+                                <li class="t">
+                                    +3 (000) 012325455
+                                </li>
+                            </ul>
                         </div>
                         <div class="btn_position">
                             <button type="submit" class="btn btn_submit">SEND MESSAGE</button>
                         </div>
-                </div>
+                        <div>
+
+                        </div>
+                    </div>
                 </form>
             </div>
 
-            <div class="panel2">
-                <div>
-                    <p class="t t1">YOU CAN FIND US HERE</p>
-                    <p class="t t2">SAMPLE ADDRESS. SAMPLE STREET.123/45 <br><a class="a_style"
-                            href="https://www.google.com/maps">OR ON
-                            MAPS</a></p>
-                    <ul>
-                        <li class="t">
-                            +3 (000) 012325455
-                        </li>
-                        <li class="t">
-                            +3 (000) 012325455
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            {{-- <div class="panel2">
+                
+            </div> --}}
 
             <div></div>
         </div>
